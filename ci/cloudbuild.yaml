@@ -1,0 +1,7 @@
+steps:
+
+# TODO build images: docker build --tag=eu.gcr.io/<PROJECT_ID>/<IMAGE>:<TAG> <DOCKERFILE>
+
+# TODO push images: docker push eu.gcr.io/<PROJECT_ID>/<IMAGE>:<TAG>
+
+# TODO deploy images: kubectl set image ...
