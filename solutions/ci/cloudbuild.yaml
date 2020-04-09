@@ -73,7 +73,7 @@ steps:
   - set
   - image
   - 'deployment/frontend'
-  - 'webapp=eu.gcr.io/$PROJECT_ID/ms-ci-frontend:$SHORT_SHA'
+  - 'frontend=eu.gcr.io/$PROJECT_ID/ms-ci-frontend:$SHORT_SHA'
 
 - name: gcr.io/cloud-builders/kubectl
   id: "deploy-backend"
@@ -86,7 +86,7 @@ steps:
   - set
   - image
   - 'deployment/backend'
-  - 'webapp=eu.gcr.io/$PROJECT_ID/ms-ci-backend:$SHORT_SHA'
+  - 'backend=eu.gcr.io/$PROJECT_ID/ms-ci-backend:$SHORT_SHA'
 
 - name: gcr.io/cloud-builders/kubectl
   id: "deploy-proxy"
@@ -99,7 +99,7 @@ steps:
   - set
   - image
   - 'deployment/proxy'
-  - 'webapp=eu.gcr.io/$PROJECT_ID/ms-ci-proxy:$SHORT_SHA'
+  - 'proxy=eu.gcr.io/$PROJECT_ID/ms-ci-proxy:$SHORT_SHA'
 
 
 # push all other images in my repo
