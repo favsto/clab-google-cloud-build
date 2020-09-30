@@ -1,4 +1,4 @@
-FROM envoyproxy/envoy:latest
+FROM envoyproxy/envoy:v1.13-latest
 
 LABEL maintainer="Fausto Fusaro <fausto.fusaro@injenia.it>"
 
